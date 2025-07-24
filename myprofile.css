@@ -1,0 +1,105 @@
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background: #f4f4f4;
+            color: #333;
+            }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .profile-header {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 20px;
+            border: 3px solid #007bff;
+        }
+
+        .profile-info h1 {
+            margin: 10px 0;
+            font-size: 2em;
+            color: #007bff;
+        }
+
+        .profile-info p {
+            font-size: 1.1em;
+        }
+
+        .section {
+            margin-top: 40px;
+        }
+
+        .section h2 {
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            background: #007bff;
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        .certifications{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .cert{
+            background: skyblue;
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        .cert a{
+            color: #fff;
+            text-decoration: none !important;
+        
+        }
+
+        a:visited{
+            color: #fff;
+            text-decoration: none !important;
+        }
+
+        .social-links a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            .profile-header {
+                flex-direction: column;
+            }
+        }

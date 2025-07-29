@@ -113,7 +113,6 @@
             border-radius: 20px;
             font-size: 0.9em;
             transition: background-color 0.3s ease-in;
-            cursor: pointer;
             user-select: none;
         }
 

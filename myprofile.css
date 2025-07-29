@@ -1,13 +1,35 @@
-        body{
+        body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             background: #f4f4f4;
             color: #333;
-            }
+        }
+
+        .containers {
+            display: flex;
+            gap: 1px;
+            align-items: baseline;
+            min-height: 100vh;
+        }
+
+        .side {
+            max-width: 250px;
+            max-height: 200px;
+            margin: 20px 20px;
+            padding: 10px;
+            background: linear-gradient(rgb(30, 238, 186), rgb(233, 103, 135));
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        .aftercolon {
+            display: block;
+            margin-left: 10px;
+        }
 
         .container {
             max-width: 900px;
-            margin: 40px auto;
+            margin: 20px 10px;
             padding: 20px;
             background: #fff;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -52,8 +74,8 @@
             color: #007bff;
         }
 
-        .college{
-            display:list-item;
+        .college {
+            display: list-item;
             gap: 3px;
         }
 
@@ -70,21 +92,21 @@
             border-radius: 20px;
             font-size: 0.9em;
             transition: background-color 0.3s ease-in;
-            cursor:pointer;
+            cursor: pointer;
             user-select: none;
         }
 
-        .skill:hover{
+        .skill:hover {
             background: #1036f0;
         }
 
-        .certifications{
+        .certifications {
             display: flex;
             flex-wrap: wrap;
             gap: 15px;
         }
 
-        .cert{
+        .cert {
             background: skyblue;
             color: #fff;
             padding: 10px 15px;
@@ -92,13 +114,13 @@
             font-size: 0.9em;
         }
 
-        .cert a{
+        .cert a {
             color: #fff;
             text-decoration: none !important;
-        
+
         }
 
-        a:visited{
+        a:visited {
             color: #fff;
             text-decoration: none !important;
         }

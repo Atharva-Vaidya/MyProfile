@@ -7,19 +7,40 @@
 
         .containers {
             display: flex;
-            gap: 1px;
-            align-items: baseline;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 40px 20px;
+            flex-wrap: wrap;
             min-height: 100vh;
+            box-sizing: border-box;
         }
 
         .side {
-            max-width: 250px;
-            max-height: 200px;
+            max-width: 275px;
             margin: 20px 20px;
             padding: 10px;
             background: linear-gradient(rgb(30, 238, 186), rgb(233, 103, 135));
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
+            border-radius: 10px;
+            color: #fff;
+        }
+
+        .points {
+            margin-top: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .point {
+            background-color: rgba(255, 255, 255, 0.15);
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-size: 0.95em;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
 
         .aftercolon {
@@ -86,7 +107,7 @@
         }
 
         .skill {
-            background: #007bff;
+            background: linear-gradient(135deg, #7b4397, #dc2430);
             color: #fff;
             padding: 8px 16px;
             border-radius: 20px;
@@ -97,7 +118,8 @@
         }
 
         .skill:hover {
-            background: #1036f0;
+            background: linear-gradient(135deg, #5c2c74, #a6192e);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
 
         .certifications {
@@ -107,11 +129,17 @@
         }
 
         .cert {
-            background: skyblue;
+            background: linear-gradient(135deg, #00b4db, #0083b0);
             color: #fff;
             padding: 10px 15px;
             border-radius: 20px;
             font-size: 0.9em;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .cert:hover {
+            background-color: linear-gradient(135deg, #007aa5, #005f7f);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
 
         .cert a {
@@ -125,14 +153,47 @@
             text-decoration: none !important;
         }
 
-        .social-links a {
-            margin-right: 15px;
-            text-decoration: none;
-            color: #007bff;
-            font-weight: bold;
+        .social-links {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            padding: 15px;
+            border: 2px dashed #007bff;
+            border-radius: 12px;
+            background-color: #f0f8ff;
+            box-shadow: 0 2px 10px rgba(0, 123, 255, 0.1);
         }
 
-        @media (max-width: 600px) {
+        .social-links a {
+            background: #007bff;
+            padding: 8px 14px;
+            border-radius: 8px;
+            font-weight: 500;
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .social-links a:hover {
+            background: #0056b3;
+        }
+
+        @media (max-width: 768px) {
+            .containers {
+                flex-direction: column;
+                align-items: center;
+                padding: 20px;
+            }
+
+            .container {
+                width: 100%;
+            }
+
+            .side {
+                width: 100%;
+            }
+
             .profile-header {
                 flex-direction: column;
             }

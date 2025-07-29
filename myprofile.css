@@ -52,6 +52,11 @@
             color: #007bff;
         }
 
+        .college{
+            display:list-item;
+            gap: 3px;
+        }
+
         .skills {
             display: flex;
             flex-wrap: wrap;
@@ -64,6 +69,13 @@
             padding: 8px 16px;
             border-radius: 20px;
             font-size: 0.9em;
+            transition: background-color 0.3s ease-in;
+            cursor:pointer;
+            user-select: none;
+        }
+
+        .skill:hover{
+            background: #1036f0;
         }
 
         .certifications{
